@@ -1,16 +1,93 @@
 body {
-	background-color: $color-100;
+	background-color: $primary-color;
 }
 #content {
 	padding: 50px 20px;
 }
 
-.title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 400;
-	font-size: $h2-size;
-}
-p {
+p,
+span {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
+}
+.normal-link {
+	color: $black;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		left: 50%;
+		bottom: -2px;
+		width: 0;
+		height: 2px;
+		background-color: $black;
+		transform: translateX(-50%);
+		transition: width 0.2s ease;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+}
+
+.button-link {
+	border: 1px solid $black;
+	color: $black;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	padding: 5px 20px;
+
+	&:hover {
+		background-color: rgba($primary-dark-color, 0.5);
+	}
+}
+
+.card {
+	background-color: $white;
+	border: 1px solid $white;
+	box-shadow: 0 0 4px 2px rgba($black, 0.1);
+
+	margin-bottom: 20px;
+	padding: 30px 20px;
+
+	span,
+	li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	ul.tags {
+		margin: 0 0 10px;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+
+	a.tag {
+		@extend .button-link;
+		font-size: 14px;
+	}
+}
+
+.card-title {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: $h2-size;
+	margin-bottom: 20px;
+}
+
+.card-excerpt {
+	margin-bottom: 20px;
+}
+
+.read-more {
+	@extend .normal-link;
+}
+
+.next-posts,
+.prev-posts {
+	@extend .button-link;
 }

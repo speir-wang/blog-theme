@@ -127,3 +127,14 @@ function register_my_menu() {
     register_nav_menu( 'mobile-menu', ( 'Mobile Menu' ) );
 }
 
+/*--------------------------------------------------------------
+# add class for prev and next posts link
+--------------------------------------------------------------*/ 
+function posts_link_attributes_1() {
+    return 'class="prev-posts"';
+}
+function posts_link_attributes_2() {
+    return 'class="next-posts"';
+}
+add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
