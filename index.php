@@ -22,12 +22,12 @@
 <div class="row pagination">
     <div class="col-xs-6 start-xs">
         <!-- has class prev-posts -->
-        <?php previous_posts_link( 'Next' ); ?>
+        <?php previous_posts_link( 'Previous' ); ?>
     </div>
 
     <div class="col-xs-6 end-xs">
         <!-- has class next-posts -->    
-        <?php next_posts_link( 'Previous' ); ?>
+        <?php next_posts_link( 'Next' ); ?>
         
     </div>
 </div>
