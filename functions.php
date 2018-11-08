@@ -88,7 +88,7 @@ if ( ! function_exists( 'theme_setup' ) ) {
 
 	}
 }
-remove_filter('the_content', 'wpautop');
+// remove_filter('the_content', 'wpautop');
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 function special_nav_class ($classes, $item) {
@@ -126,6 +126,9 @@ function register_my_menu() {
     register_nav_menu( 'primary', ( 'Primary Menu' ) );
     register_nav_menu( 'mobile-menu', ( 'Mobile Menu' ) );
 }
+/*--------------------------------------------------------------
+# Remove div tags from content
+--------------------------------------------------------------*/ 
 
 /*--------------------------------------------------------------
 # add class for prev and next posts link
