@@ -1,0 +1,18 @@
+.tags {
+	span,
+	li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	ul.tags {
+		margin: 0 0 10px;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+
+	a.tag {
+		@extend .button-link;
+		font-size: 14px;
+	}
+}

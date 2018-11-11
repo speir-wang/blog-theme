@@ -1,8 +1,10 @@
 <?php 
 /**
  * Post Card that displays on home page
+ * 
+ * Components used:
+ *     - Post Tags
  */
-$tags = get_the_tags();
 
 ?>
 <div class="row">
@@ -12,21 +14,9 @@ $tags = get_the_tags();
             <div class="card-title">
                 <?php the_title();?>
             </div>
-        
-            <?php if ($tags) : ?>
-            <span>Tags: </span>
-            <ul class="tags">
-                <?php foreach($tags as $tag) :  ?>
-                    <li>
-                        <a class="tag"
-                            href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>">
-                                <?php print_r($tag->name); ?>
-                        </a>   
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-            <?php endif; ?>
 
+            <?php get_template_part("templates/part", "post_tags"); ?>        
+            
             <article class="card-excerpt">
                 <?php the_excerpt();?>
             </article>

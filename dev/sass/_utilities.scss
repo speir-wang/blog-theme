@@ -46,47 +46,6 @@ span {
 	}
 }
 
-.card {
-	background-color: $white;
-	border: 1px solid $white;
-	box-shadow: 0 0 4px 2px rgba($black, 0.1);
-
-	margin-bottom: 30px;
-	padding: 30px;
-
-	span,
-	li {
-		display: inline-block;
-		margin-right: 5px;
-	}
-	ul.tags {
-		margin: 0 0 10px;
-		padding: 0;
-		list-style: none;
-		display: inline-block;
-	}
-
-	a.tag {
-		@extend .button-link;
-		font-size: 14px;
-	}
-}
-
-.card-title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	font-size: $h2-size;
-	margin-bottom: 20px;
-}
-
-.card-excerpt {
-	margin-bottom: 20px;
-}
-
-.read-more {
-	@extend .normal-link;
-}
-
 .next-posts,
 .prev-posts {
 	@extend .button-link;
