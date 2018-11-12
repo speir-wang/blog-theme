@@ -1,0 +1,29 @@
+.single-post {
+	h1 {
+		font-weight: 300;
+		font-family: "Roboto", sans-serif;
+	}
+
+	.post-date {
+		font-style: italic;
+		font-size: 14px;
+	}
+
+	.post-content {
+		line-height: 1.5;
+
+		p {
+			margin-top: 0;
+			margin-bottom: 24px;
+			font-size: 18px;
+		}
+	}
+	.gist {
+		margin: 32px auto;
+
+		p,
+		span {
+			font-family: "Droid Sans Mono", monospace !important;
+		}
+	}
+}

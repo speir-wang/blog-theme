@@ -7,10 +7,14 @@
                     the_post(); ?>
                     <h1><?php the_title(); ?></h1>
                     
-                    <article><?php the_content(); ?></article>
 
-        <?php   endwhile;
+                    <?php get_template_part("templates/part", "post_tags"); ?>
+                    <p class="post-date">Published on <?php the_date(); ?></p>
 
+                    <article class="post-content"><?php the_content(); ?></article>
+
+        <?php   
+                endwhile;
             endif;
         ?>
     </div>
