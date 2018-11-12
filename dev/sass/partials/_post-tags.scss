@@ -13,6 +13,7 @@
 
 	a.tag {
 		@extend .button-link;
+		transition: background-color 0.2s ease;
 		font-size: 14px;
 	}
 }

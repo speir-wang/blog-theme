@@ -88,7 +88,7 @@ if ( ! function_exists( 'theme_setup' ) ) {
 
 	}
 }
-// remove_filter('the_content', 'wpautop');
+
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 function special_nav_class ($classes, $item) {
@@ -104,7 +104,7 @@ function enqueue_scripts_styles(){
 	// styles
     wp_enqueue_style( 'style', get_stylesheet_uri(), array(), FILE_VERSION );
     wp_enqueue_style('flexbox-grid', "https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css", "", false, 'all');
-    wp_enqueue_style('roboto', "https://fonts.googleapis.com/css?family=Roboto:300,400", "", false, 'all');
+    wp_enqueue_style('roboto', "https://fonts.googleapis.com/css?family=Roboto:300,400,700", "", false, 'all');
     wp_enqueue_style('droid-sans-mono', "https://fonts.googleapis.com/css?family=Droid+Sans+Mono", "", false, 'all');
     
 	// scripts
@@ -127,9 +127,6 @@ function register_my_menu() {
     register_nav_menu( 'primary', ( 'Primary Menu' ) );
     register_nav_menu( 'mobile-menu', ( 'Mobile Menu' ) );
 }
-/*--------------------------------------------------------------
-# Remove div tags from content
---------------------------------------------------------------*/ 
 
 /*--------------------------------------------------------------
 # add class for prev and next posts link
@@ -142,3 +139,6 @@ function posts_link_attributes_2() {
 }
 add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
+
+
+include_once get_parent_theme_file_path( './utilities/shortcodes.php' );

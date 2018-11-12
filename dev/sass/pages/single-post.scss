@@ -12,6 +12,14 @@
 	.post-content {
 		line-height: 1.5;
 
+		a {
+			text-decoration: underline;
+			transition: color 0.2s ease;
+			&:hover {
+				color: $primary-dark-color;
+			}
+		}
+
 		p {
 			margin-top: 0;
 			margin-bottom: 24px;
@@ -19,11 +27,11 @@
 		}
 	}
 	.gist {
-		margin: 32px auto;
+		margin: 50px auto;
 
 		p,
 		span {
-			font-family: "Droid Sans Mono", monospace !important;
+			font-family: $code-font;
 		}
 	}
 }

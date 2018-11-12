@@ -18,9 +18,10 @@
             endif;
         ?>
     </div>
-   
-
 
 </div>
 
+<?php get_template_part("templates/part", "post_navigation"); ?>
+
+                            
 <?php get_footer(); ?>

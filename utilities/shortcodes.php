@@ -45,3 +45,14 @@ function button_shortcode( $atts, $content = null ) {
 	}
 }
 add_shortcode( 'button', 'button_shortcode' );
+
+function embed_gist($atts, $cotent=null) {
+    $gist = shortcode_atts( array(
+        'url'  => '',
+        'file'    => '',
+    ), $atts);
+
+    return '<script src="' . $gist["url"] . '?file=' . $gist["file"] . '" ></script>';
+}
+
+add_shortcode( 'gist', 'embed_gist' );

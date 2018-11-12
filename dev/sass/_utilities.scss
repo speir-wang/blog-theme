@@ -5,6 +5,10 @@ body {
 	padding: 50px 20px;
 }
 
+a {
+	color: $black;
+}
+
 p,
 span {
 	font-family: "Roboto", sans-serif;
@@ -49,4 +53,21 @@ span {
 .next-posts,
 .prev-posts {
 	@extend .button-link;
+}
+
+blockquote {
+	padding-left: 30px;
+	border-left: 3px solid $primary-dark-color;
+	p {
+		font-weight: 400;
+		font-style: italic;
+	}
+}
+
+code {
+	font-family: $code-font;
+	font-size: 16px;
+	background-color: rgba($black, 0.05);
+	padding: 3px 4px;
+	margin: 0 2px;
 }
