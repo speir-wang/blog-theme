@@ -2,4 +2,41 @@
 	a:hover {
 		text-decoration: underline;
 	}
+	.arrow-forward,
+	.arrow-backward {
+		display: block;
+		position: relative;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+
+	.arrow-backward {
+		padding-left: 40px;
+		&:before {
+			content: "";
+			position: absolute;
+			background-image: url("./inc/icons/arrow.svg");
+			background-position: left center;
+			background-repeat: no-repeat;
+			width: 30px;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	.arrow-forward {
+		padding-right: 40px;
+		&:after {
+			content: "";
+			position: absolute;
+			background-image: url("./inc/icons/arrow.svg");
+			background-position: right center;
+			background-repeat: no-repeat;
+			transform: rotate(180deg);
+			width: 30px;
+			height: 100%;
+			top: 0;
+			right: 0;
+		}
+	}
 }

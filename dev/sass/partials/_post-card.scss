@@ -16,6 +16,9 @@
 	font-weight: 300;
 	font-size: $h2-size;
 	margin-bottom: 20px;
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 .card-excerpt {

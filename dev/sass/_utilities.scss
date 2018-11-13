@@ -11,13 +11,13 @@ a {
 
 p,
 span {
-	font-family: "Roboto", sans-serif;
+	font-family: $primary-font;
 	font-weight: 300;
 }
 .normal-link {
 	color: $black;
 	position: relative;
-	font-family: "Roboto", sans-serif;
+	font-family: $primary-font;
 	font-weight: 400;
 
 	&:after {
@@ -38,10 +38,14 @@ span {
 	}
 }
 
+hr {
+	margin: 20px auto;
+}
+
 .button-link {
 	border: 1px solid $black;
 	color: $black;
-	font-family: "Roboto", sans-serif;
+	font-family: $primary-font;
 	font-weight: 400;
 	padding: 5px 20px;
 
