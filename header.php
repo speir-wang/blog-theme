@@ -20,9 +20,21 @@
 
 <div id="page" class="site">
 
-    <header id="masthead" class="site-header container-fluid" role="banner">
-        <div class="wrap desktop-menu">
-            
+    <header id="masthead" class="site-header" role="banner">
+        <div class="container">
+            <div class="row end-xs">
+                <div class="col-xs-12">
+                <?php 
+                    wp_nav_menu( 
+                        array(
+                            'menu' 		=> 'Primary Menu',
+                            'menu_id'	=> 'primary-menu',
+                            'theme_location' => 'primary',
+                        ) 
+                    );  
+                ?>    
+                </div>
+            </div>
         </div>
         
         <div class="wrap mobile-menu">
