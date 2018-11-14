@@ -20,7 +20,7 @@
 
 <div id="page" class="site">
 
-    <header id="masthead" class="site-header" role="banner">
+    <header id="masthead" class="site-header container-fluid" role="banner">
         <div class="container">
             <div class="row end-xs">
                 <div class="col-xs-12">
