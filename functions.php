@@ -3,6 +3,13 @@
 define("FILE_VERSION",     "0.0.1");
 
 
+add_filter( 'wp_revisions_to_keep', 'wp_revisions', 10, 2 );
+
+function wp_revisions( $num, $post ) {
+    $num = 10;
+    return $num;
+}
+
 /**
  * Disable the emoji's
  */
