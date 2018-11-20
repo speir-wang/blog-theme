@@ -9,7 +9,7 @@
 	<footer id="footer" class="site-footer" role="contentinfo">
         <div class="container-fluid">
             <div class="row wider-wrap center-xs">
-                
+
             </div>
         </div>
         

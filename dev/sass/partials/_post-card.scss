@@ -12,10 +12,12 @@
 }
 
 .card-title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	font-size: $h2-size;
 	margin-bottom: 20px;
+	a {
+		font-family: $primary-font;
+		font-weight: 400;
+		font-size: $h2-size;
+	}
 	a:hover {
 		text-decoration: underline;
 	}
@@ -23,4 +25,5 @@
 
 .card-excerpt {
 	margin-bottom: 20px;
+	line-height: 1.5;
 }
